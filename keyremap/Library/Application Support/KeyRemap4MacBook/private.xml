@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <root>
+    <deviceproductdef>
+	<productname>APPLE_JIS_KEYBOARD</productname>
+	<productid>0x0291</productid>	
+    </deviceproductdef>
+
     <item>
         <name>Shifts to Parentheses</name>
         <identifier>private.shifts_to_parens</identifier>
@@ -91,5 +96,16 @@
                 KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
                 KeyCode::CURSOR_RIGHT
         </autogen>
-    </item>    
+    </item>
+
+    <item>
+        <name>JIS_YEN to Tilde</name>
+        <identifier>private.jis_yen_to_tilde</identifier>
+	<device_only>DeviceVendor::APPLE_COMPUTER,DeviceProduct::APPLE_JIS_KEYBOARD</device_only>
+        <autogen>
+		--KeyToKey--
+		KeyCode::JIS_YEN,
+		KeyCode::BACKQUOTE
+	</autogen>
+    </item>   
 </root>
