@@ -1,0 +1,15 @@
+cask install undercover
+cask install onepassword
+cask install flux
+cask install backblaze
+cask install karabiner
+cask install shortcat
+cask install dropbox
+
+#cask install transmit
+#cask install panic-unison
+#cask install dash
+#cask install cathode
+#cask install bartender
+#cask install transmission
+#cask install spotify
