@@ -38,3 +38,9 @@ Uninstall everything:
 
     cd ~/.dotfiles
     make uninstall
+
+### Postflight
+Make `zsh` your default shell:
+
+    chsh -s /usr/local/bin/zsh
+    sudo dscl . change /users/$USER UserShell /bin/bash /usr/local/bin/zsh
