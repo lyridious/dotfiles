@@ -5,6 +5,16 @@
     <productid>0x0291</productid>
     </deviceproductdef>
 
+    <devicevendordef>
+        <vendorname>TOPRE_CORPORATION</vendorname>
+        <vendorid>0x0853</vendorid>
+    </devicevendordef>
+
+    <deviceproductdef>
+        <productname>HHKB_PROFESSIONAL</productname>
+        <productid>0x0100</productid>
+    </deviceproductdef>
+
     <item>
         <name>Shifts to Parentheses</name>
         <identifier>private.shifts_to_parens</identifier>
@@ -107,5 +117,37 @@
         KeyCode::JIS_YEN,
         KeyCode::BACKQUOTE
     </autogen>
+    </item>
+
+    <item>
+        <name>HHKB US layout to JP fixes</name>
+        <identifier>private.hhkb_us_to_jp_fixes</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <device_only>DeviceVendor::TOPRE_CORPORATION,DeviceProduct::HHKB_PROFESSIONAL</device_only>
+        <autogen>
+            --KeyToKey--
+            KeyCode::EQUAL,
+            KeyCode::BACKSLASH
+        </autogen>
+        <autogen>
+            --KeyToKey--
+            KeyCode::BACKSLASH,
+            KeyCode::BRACKET_LEFT
+        </autogen>
+        <autogen>
+            --KeyToKey--
+            KeyCode::BACKQUOTE,
+            KeyCode::EQUAL
+        </autogen>
+        <autogen>
+            --KeyToKey--
+            KeyCode::BRACKET_LEFT,
+            KeyCode::BRACKET_RIGHT
+        </autogen>
+        <autogen>
+            --KeyToKey--
+            KeyCode::BRACKET_RIGHT,
+            KeyCode::QUOTE, ModifierFlag::SHIFT_L
+        </autogen>
     </item>
 </root>
