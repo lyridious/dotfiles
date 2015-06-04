@@ -124,26 +124,37 @@
         <identifier>private.hhkb_us_to_jp_fixes</identifier>
         <inputsource_only>JAPANESE</inputsource_only>
         <device_only>DeviceVendor::TOPRE_CORPORATION,DeviceProduct::HHKB_PROFESSIONAL</device_only>
+        <!-- ゜to へ -->
         <autogen>
             --KeyToKey--
             KeyCode::EQUAL,
             KeyCode::BACKSLASH
         </autogen>
+        <!-- へ　to ー -->
         <autogen>
             --KeyToKey--
             KeyCode::BACKSLASH,
-            KeyCode::BRACKET_LEFT
+            KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
         </autogen>
+        <!-- ｀ to ゛ -->
+        <autogen>
+            --KeyToKey--
+            KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L,
+            KeyCode::EQUAL
+        </autogen>
+        <!-- 〜 to ゜ -->
         <autogen>
             --KeyToKey--
             KeyCode::BACKQUOTE,
-            KeyCode::EQUAL
+            KeyCode::BRACKET_LEFT
         </autogen>
+        <!-- ゛to む -->
         <autogen>
             --KeyToKey--
             KeyCode::BRACKET_LEFT,
             KeyCode::BRACKET_RIGHT
         </autogen>
+        <!-- む to ろ -->
         <autogen>
             --KeyToKey--
             KeyCode::BRACKET_RIGHT,
