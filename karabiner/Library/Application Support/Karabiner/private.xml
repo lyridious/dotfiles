@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <root>
     <deviceproductdef>
-	<productname>APPLE_JIS_KEYBOARD</productname>
-	<productid>0x0291</productid>	
+    <productname>APPLE_JIS_KEYBOARD</productname>
+    <productid>0x0291</productid>
     </deviceproductdef>
 
     <item>
@@ -27,7 +27,7 @@
         -->
         <autogen>--KeyToKey-- KeyCode::SPACE, ModifierFlag::SHIFT_R, KeyCode::KEY_0, ModifierFlag::SHIFT_L, KeyCode::SPACE</autogen>
     </item>
-    
+
     <item>
         <name>LeftShift+Space to Backspace</name>
         <identifier>private.leftshift_and_space_to_backspace</identifier>
@@ -37,7 +37,7 @@
                 KeyCode::DELETE
         </autogen>
     </item>
-    
+
     <item>
         <name>Disable Backspace</name>
         <identifier>private.disable_backspace</identifier>
@@ -47,7 +47,7 @@
                 KeyCode::VK_NONE
         </autogen>
     </item>
-    
+
     <item>
         <name>Disable Parentheses</name>
         <identifier>private.disable_parentheses</identifier>
@@ -62,7 +62,7 @@
                 KeyCode::VK_NONE
         </autogen>
     </item>
- 
+
     <item>
         <name>Scroll lock to Caps lock</name>
         <identifier>private.scr_lk_to_caps_lock</identifier>
@@ -72,7 +72,7 @@
             KeyCode::CAPSLOCK
         </autogen>
     </item>
-    
+
     <item>
         <name>Control_L+jkl; to Left/Down/Up/Right</name>
         <identifier>option.custom_vi_mode</identifier>
@@ -101,11 +101,11 @@
     <item>
         <name>JIS_YEN to Tilde</name>
         <identifier>private.jis_yen_to_tilde</identifier>
-	<device_only>DeviceVendor::APPLE_COMPUTER,DeviceProduct::APPLE_JIS_KEYBOARD</device_only>
+    <device_only>DeviceVendor::APPLE_COMPUTER,DeviceProduct::APPLE_JIS_KEYBOARD</device_only>
         <autogen>
-		--KeyToKey--
-		KeyCode::JIS_YEN,
-		KeyCode::BACKQUOTE
-	</autogen>
-    </item>   
+        --KeyToKey--
+        KeyCode::JIS_YEN,
+        KeyCode::BACKQUOTE
+    </autogen>
+    </item>
 </root>
