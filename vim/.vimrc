@@ -1,0 +1,1 @@
+runtime flavors/bootstrap.vim
