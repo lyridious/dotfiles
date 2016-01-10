@@ -74,36 +74,32 @@
     </item>
 
     <item>
-        <name>Scroll lock to Caps lock</name>
-        <identifier>private.scr_lk_to_caps_lock</identifier>
+        <name>VIM like arrow keys</name>
+        <identifier>private.vim_like_arrow_keys</identifier>
         <autogen>
-            --KeyToKey--
-            KeyCode::F14,
-            KeyCode::CAPSLOCK
+            --KeyOverlaidModifier--
+            KeyCode::TAB,
+            KeyCode::FN,
+            KeyCode::TAB
         </autogen>
-    </item>
-
-    <item>
-        <name>Control_L+jkl; to Left/Down/Up/Right</name>
-        <identifier>option.custom_vi_mode</identifier>
         <autogen>
                 --KeyToKey--
-                KeyCode::J, ModifierFlag::CONTROL_L,
+                KeyCode::J, ModifierFlag::FN,
                 KeyCode::CURSOR_LEFT
         </autogen>
         <autogen>
                 --KeyToKey--
-                KeyCode::K, ModifierFlag::CONTROL_L,
+                KeyCode::K, ModifierFlag::FN,
                 KeyCode::CURSOR_DOWN
         </autogen>
         <autogen>
                 --KeyToKey--
-                KeyCode::L, ModifierFlag::CONTROL_L,
+                KeyCode::L, ModifierFlag::FN,
                 KeyCode::CURSOR_UP
         </autogen>
         <autogen>
                 --KeyToKey--
-                KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
+                KeyCode::SEMICOLON, ModifierFlag::FN,
                 KeyCode::CURSOR_RIGHT
         </autogen>
     </item>
@@ -111,7 +107,7 @@
     <item>
         <name>JIS_YEN to Tilde</name>
         <identifier>private.jis_yen_to_tilde</identifier>
-    <device_only>DeviceVendor::APPLE_COMPUTER,DeviceProduct::APPLE_JIS_KEYBOARD</device_only>
+        <device_only>DeviceVendor::APPLE_COMPUTER,DeviceProduct::APPLE_JIS_KEYBOARD</device_only>
         <autogen>
         --KeyToKey--
         KeyCode::JIS_YEN,
