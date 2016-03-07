@@ -1,0 +1,3 @@
+flavor 'lyridious/vim-tasteful'
+flavor 'kana/vim-smartinput'
+flavor 'kana/vim-submode'

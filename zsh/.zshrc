@@ -37,11 +37,11 @@ autoload -Uz bashcompinit
 compinit -i
 bashcompinit
 
-source /usr/local/etc/bash_completion.d/tmux
+#source /usr/local/etc/bash_completion.d/tmux
 # source /usr/local/etc/bash_completion.d/go-completion.bash
 #source /usr/local/etc/bash_completion.d/hg-completion.bash
-source /usr/local/etc/bash_completion.d/ag.bashcomp.sh
-source /usr/local/etc/bash_completion.d/youtube-dl.bash-completion
+#source /usr/local/etc/bash_completion.d/ag.bashcomp.sh
+#source /usr/local/etc/bash_completion.d/youtube-dl.bash-completion
 
 # export TMOUT=60
 export LC_ALL=en_US.UTF-8
